@@ -1,0 +1,40 @@
+*{ margin: 0;
+    padding: 0;
+}
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    align-items: center;
+    
+}
+#logo{
+    width: 8%;
+
+}
+#icone{
+font-size: 200%;
+position: fixed;
+right: 2%;
+cursor: pointer;
+}
+#icone:hover{
+    background-color: whitesmoke;
+    color:black
+}
+menu{
+    display: none;
+    position: fixed;
+    right: 0%;
+    cursor: pointer;
+    background-color: yellowgreen;
+    padding: 3%;
+
+}
+menu ul{
+    list-style-type: none;
+    font-size: 130%;
+}
+menu ul li{
+    padding-top: 10%;
+}
