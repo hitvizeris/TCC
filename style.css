@@ -1,22 +1,19 @@
 *{ margin: 0;
     padding: 0;
 }
-#cabecalho{
+header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: bisque;
     align-items: center;
     
 }
 #logo{
     width: 8%;
-
 }
 #icone{
-font-size: 200%;
-position: fixed;
-right: 2%;
-cursor: pointer;
+    font-size: 200%;
+    cursor: pointer;
 }
 #icone:hover{
     background-color: whitesmoke;
@@ -24,17 +21,23 @@ cursor: pointer;
 }
 menu{
     display: none;
-    position: fixed;
+    position: absolute;
     right: 0%;
+    top: 0%;
+    width: 30%;
+    height: 100%;
     cursor: pointer;
-    background-color: yellowgreen;
-    padding: 3%;
-
+    background-color: rgb(108, 77, 29);
 }
 menu ul{
     list-style-type: none;
-    font-size: 130%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 menu ul li{
-    padding-top: 10%;
+    font-size: 150%;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    height: 10%;
+
 }

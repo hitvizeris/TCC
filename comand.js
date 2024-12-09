@@ -1,7 +1,9 @@
+menu = document.getElementById('itens');
+
 function clickMenu(){
-    if(itens.style.display == 'block'){
-        itens.style.display = 'none'
+    if(menu.style.display == 'flex'){
+        menu.style.display = 'none'
     }else{
-        itens.style.display = 'block'
+        menu.style.display = 'flex'
     }
 }
