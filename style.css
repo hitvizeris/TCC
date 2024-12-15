@@ -1,12 +1,44 @@
 *{ margin: 0;
     padding: 0;
 }
-header{
+header a{
+    color: #F2E6D8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#menuPC a:hover {
+    opacity: 0.7;
+}
+.logoTitulo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#menuPC{
     display: flex;
     justify-content: space-around;
-    background-color: bisque;
     align-items: center;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #593325;
+    height: 8vh;
+}
+.nav-bar {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+#menuMobile{
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 1%;
+    justify-content: space-around;
+    background-color: #593325;
+    align-items: center;
 }
 #logo{
     width: 8%;
@@ -14,10 +46,7 @@ header{
 #icone{
     font-size: 200%;
     cursor: pointer;
-}
-#icone:hover{
-    background-color: whitesmoke;
-    color:black
+    color: #F2E6D8;
 }
 menu{
     display: none;
@@ -27,7 +56,7 @@ menu{
     width: 30%;
     height: 100%;
     cursor: pointer;
-    background-color: rgb(108, 77, 29);
+    background-color: #593325;
 }
 menu ul{
     list-style-type: none;
@@ -40,4 +69,13 @@ menu ul li{
     width: 100%;
     height: 10%;
 
+}
+
+@media (max-width: 999px) {
+    #menuMobile{
+        display: flex;
+    }
+    #menuPC{
+        display: none;
+    }
 }
