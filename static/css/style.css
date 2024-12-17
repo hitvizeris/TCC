@@ -1,6 +1,9 @@
 *{ margin: 0;
     padding: 0;
 }
+body{
+    background-color: #fff2e2;
+}
 header a{
     color: #F2E6D8;
     text-decoration: none;
@@ -10,6 +13,7 @@ header a{
     opacity: 0.7;
 }
 .logoTitulo {
+    font-family: "Playlist Script";
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -43,6 +47,9 @@ header a{
 #logo{
     width: 8%;
 }
+a{
+    text-decoration: none;
+}
 #icone{
     font-size: 200%;
     cursor: pointer;
@@ -70,7 +77,57 @@ menu ul li{
     height: 10%;
 
 }
+#ft_inicial{
+    width: 100%;
+    height: 30%;
+    
+}
+.flut{
+    background-color: #593325;
+    position: sticky;
+    top: 90%;
+    left: 95%;
+    padding: 1% 1% 1% 1.5%;
+    width: 3%;
+    height: 4%;
+    font-size: 140%;
+    
+}
+.bt1{
+    background-color: #4c3b34;
+    width: 250px;
+    height: 70px;
+}
+.sbrest{
+    background-color: #f5a43d;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    margin: 2% 3% 6% 15% ;
+}
+.userinsta{
+    font-family: "Playlist Script";
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.experiencias{
+    background-color: #4c3b34;
+    height: 500px;
+    width: 100%;
 
+}
+.div4{
+    height: 400px;
+}
+.rodape{
+    background-color: #f5a43d;
+    width: 100%;
+    height: 500px;
+}
+.final{
+    margin: 5% 0px 5% 35%;
+}
 @media (max-width: 999px) {
     #menuMobile{
         display: flex;
