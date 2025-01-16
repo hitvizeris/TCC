@@ -1,0 +1,23 @@
+.principal{
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    background-color: #593325;
+    text-align: center;
+}
+h1{
+    background-color:  #F2E6D8;
+    text-align: center;
+    font-size: 60px;
+}
+p{
+    color: #F2E6D8;
+    height: 40px;
+    margin: 0 10% 0 10%;
+    font-size: 15px;
+}
+.local{
+    height:70%;
+    width: 90%;
+
+}
