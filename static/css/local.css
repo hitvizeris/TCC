@@ -1,7 +1,7 @@
 .principal{
     margin: 0 auto;
     width: 80%;
-    height: 600px;
+    height: 750px;
     background-color: #593325;
     text-align: center;
 }
@@ -13,7 +13,7 @@ h1{
 p{
     color: #F2E6D8;
     height: 40px;
-    margin: 0 10% 0 10%;
+    margin: 0 10% 12% 10%;
     font-size: 15px;
 }
 .local{
