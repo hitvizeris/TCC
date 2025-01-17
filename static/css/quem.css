@@ -1,0 +1,13 @@
+.principal{
+    margin: 0 auto;
+    width: 80%;
+    height: 750px;
+    background-color: #F2E6D8;
+    text-align: center;
+}
+h1{
+    background-color: #593325;
+    text-align: center;
+    font-size: 60px;
+    color: #F2E6D8;
+}
