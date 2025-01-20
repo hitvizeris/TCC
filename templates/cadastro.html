@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('cadastro') }}">
+        {{ form.csrf_token }}
+        {{ form.nome.label }} {{ form.nome(size=20) }} <br>
+
+        {{ form.preco.label }} {{ form.preco(size=20) }} <br>
+
+        {{ form.categoria.label }} {{ form.categoria(style='width: 100px') }} <br>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
