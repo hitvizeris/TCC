@@ -1,3 +1,4 @@
+
 menu = document.getElementById('itens');
 
 function clickMenu(){

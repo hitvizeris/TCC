@@ -27,6 +27,18 @@ class CasdastroForm(FlaskForm):
 def index():
     return render_template('index.html')
 
+@app.route('/localizacao')
+def localizacao():
+    return render_template('localizacao.html')
+
+@app.route('/quemsomos')
+def quemsomos():
+    return render_template('quemsomos.html')
+
+@app.route('/cardapio')
+def cardapio():
+    return render_template('cardapio.html')
+
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
         if Form.validade_on_submit():

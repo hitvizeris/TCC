@@ -1,0 +1,54 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+.titulo{
+    background-color: #f5a43d;
+    font-size: 40px;
+    margin: 0 auto;
+}
+.div_princ{
+    background-color: #fff2e2;
+    height: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+.comidas{
+    background-color: #fff2e2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.div1{
+    height: 80%;
+    width: 30%;
+    background-color: #fff2e2;
+    display: inline;
+    margin: 0% 3% 0% 1%;
+
+}
+.img1{
+    height: 200px;
+    width: 300px;
+}
+.div2{
+    height: 80%;
+    width: 30%;
+    background-color: #fff2e2;
+    display: inline;
+    margin: 0% 3% 0% 3%;
+}
+
+.div3{
+    height: 80%;
+    width: 30%;
+    background-color: #fff2e2;
+    display: inline;
+    margin: 0% 3% 0% 3%;
+}
+#div1,#div2,#div3,#div4,#div5,#div6{
+    height: 25%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5a43d;
+}
