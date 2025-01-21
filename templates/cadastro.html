@@ -6,7 +6,7 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form method="POST" action="{{ url_for('cadastro') }}">
+    <form method="POST" >
         {{ form.csrf_token }}
         {{ form.nome.label }} {{ form.nome(size=20) }} <br>
 

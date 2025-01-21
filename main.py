@@ -1,4 +1,4 @@
-from flask  import Flask, render_template, request #importando a biblioteca flask
+from flask  import Flask, redirect, render_template, request, url_for #importando a biblioteca flask
 from flask_sqlalchemy import SQLAlchemy #importando a biblioteca sqlachemy
 from flask_wtf import FlaskForm #importando a biblioteca flaskForm
 from wtforms import Form, StringField, SubmitField, SubmitField, SelectField, FloatField
@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///TM.db'
 
 bancoDados = SQLAlchemy(app)#criando uma instância da classe SQLAlchemy
 
-class RegistrationForm(FlaskForm):
+class CadastroForm(FlaskForm):
     nome = StringField('Nome')
     preco = FloatField('Preco')
     categoria = SelectField('Categoria',  choices=[('entrada','Entrada'),('principal', 'Principal'), ('sobremesa', 'Sobremesa')])
@@ -39,7 +39,7 @@ def cardapio():
 
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
-    form = RegistrationForm(request.form)
+    form = CadastroForm(request.form)
     if form.validate() and request.method == "POST":
         pratos = Pratos(
             nome = form.nome.data, 
@@ -51,10 +51,29 @@ def cadastro():
     
     return render_template('cadastro.html', form = form)
 
-@app.route('/listarDados')
-def listarDados():
+@app.route('/editar/<int:id>', methods=['GET','POST'])
+def editar(id):
+    prato = Pratos.query.get(id)
+    form = CadastroForm(obj=prato)
+    if form.validate_on_submit():
+        prato.nome = form.nome.data
+        prato.preco = form.preco.data
+        prato.categoria = form.categoria.data
+        bancoDados.session.commit()
+        return redirect(url_for('gerenciarDados'))
+    return render_template('cadastro.html', form=form)
+
+@app.route('/excluir/<int:id>')
+def excluir(id):
+    prato = Pratos.query.get(id)
+    bancoDados.session.delete(prato)
+    bancoDados.session.commit()
+    return redirect(url_for('gerenciarDados'))
+
+@app.route('/gerenciarDados')
+def gerenciarDados():
     dados = Pratos.query.all()
-    return render_template('listarDados.html', dados=dados)
+    return render_template('gerenciarDados.html', dados=dados)
 
 if __name__ == '__main__':
     with app.app_context():
