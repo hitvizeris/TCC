@@ -6,6 +6,7 @@ body{
     background-color: #f5a43d;
     font-size: 40px;
     margin: 0 auto;
+    text-align: center;
 }
 .div_princ{
     background-color: #fff2e2;
@@ -25,6 +26,7 @@ body{
     background-color: #fff2e2;
     display: inline;
     margin: 0% 3% 0% 1%;
+    text-align: left;
 
 }
 .img1{
@@ -37,6 +39,7 @@ body{
     background-color: #fff2e2;
     display: inline;
     margin: 0% 3% 0% 3%;
+    text-align: left;
 }
 
 .div3{
@@ -45,10 +48,14 @@ body{
     background-color: #fff2e2;
     display: inline;
     margin: 0% 3% 0% 3%;
+    text-align: left;
 }
 #div1,#div2,#div3,#div4,#div5,#div6{
     height: 25%;
     width: 80%;
     margin: 0 auto;
     background-color: #f5a43d;
+    
+
+    
 }

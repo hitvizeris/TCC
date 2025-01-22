@@ -5,9 +5,43 @@
     background-color: #F2E6D8;
     text-align: center;
 }
+.texto{
+    display: flex;
+}
 h1{
     background-color: #593325;
     text-align: center;
     font-size: 60px;
     color: #F2E6D8;
+}
+.div_prin{
+    background-color: #F2E6D8;
+    width: 50%;
+}
+.div{
+    height: 40%;
+    background-color: aqua;
+    display: inline;
+    justify-content: space-between;
+    text-align: left;
+    
+}
+.logo{
+    margin: 0% 6% 0% 6%;
+    height: 40%;
+    width: 30%;
+}
+h2{
+    text-align: center;
+    font-size: 4dvh;
+    background-color: #593325;
+    text-align: left;
+    padding-left: 3%;
+    color: #F2E6D8;
+}
+
+@media (max-width:750px){
+    .principal{
+
+    }
 }

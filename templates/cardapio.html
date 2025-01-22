@@ -15,36 +15,72 @@
         <div class="div1">
             <h1>ENTRADAS</h1>
             <div id="div1">
-                <h1></h1>
+
+            
+                <img src="/static/images/isca.jpg" class="isca">
+  
+                <p> camarão</p>
+                <p> comida kskskskshdjks</p>
             </div>
-            <div  id="div2">
-                <h1></h1>
+
+            <div id="div2">
+
             </div>
+
+            {% for prato in dadosEntrada %}
+            <div id="div1">
+                <h1>{{prato.nome}}</h1>
+            </div>
+            {% endfor %}
             
         </div>
         
         <div  class="div2">
             <h1>PRATOS PRINCIPAIS</h1>
-            <div  id="div3">
-                <h1></h1>
+
+            <div id="div1">
+               
+                <img src="/static/images/isca.jpg" class="isca">
+                  
+                <p> peixe</p>
+
+                <p> comida kskskskshdjks</p>
+
+
+
             </div>
-            
-            <div  id="div4">
-                <h1>Isca de Peixe</h1>
+
+            <div id="div2">
+
+            </div>
+            {% for prato in dadosPrincipal %}
+            <div id="div1">
+                <h1>{{prato.nome}}</h1>
+            </div>
+            {% endfor %}
+        
         </div>
-        
-        
-    </div>
     
     <div  class="div3">
         <h1>SOBREMESA</h1>
-        <div id="div5">
-            <h1>Isca de Peixe</h1>
+        <div id="div1">
+
+
+            <img src="/static/images/isca.jpg" class="isca">
+              
+            <p> carne kskskskshdjks</p>
+
+            <p> foi feita com tal ingre</p>
+
         </div>
-        <div id="div6">
-            <h1>Isca de Peixe</h1>
+        <div id="div2">
+
         </div>
-        
+        {% for prato in dadosSobremesa %}
+            <div id="div1">
+                <h1>{{prato.nome}}</h1>
+            </div>
+        {% endfor %}
     </div>
     </div>
 
