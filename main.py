@@ -1,4 +1,4 @@
-from flask  import Flask, redirect, render_template, request, url_for #importando a biblioteca flask
+from flask  import Flask, redirect, render_template, request, session, url_for #importando a biblioteca flask
 from flask_sqlalchemy import SQLAlchemy #importando a biblioteca sqlachemy
 from flask_wtf import FlaskForm #importando a biblioteca flaskForm
 from wtforms import Form, StringField, SubmitField, SubmitField, SelectField, FloatField
@@ -32,10 +32,6 @@ def localizacao():
 @app.route('/quemsomos')
 def quemsomos():
     return render_template('quemsomos.html')
-
-@app.route('/cardapio')
-def cardapio():
-    return render_template('cardapio.html')
 
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
@@ -73,7 +69,16 @@ def excluir(id):
 @app.route('/gerenciarDados')
 def gerenciarDados():
     dados = Pratos.query.all()
+    
     return render_template('gerenciarDados.html', dados=dados)
+
+@app.route('/cardapio')
+def cardapio():
+    dadosEntrada = bancoDados.session.query(Pratos).filter_by(categoria = 'entrada')
+    dadosPrincipal = bancoDados.session.query(Pratos).filter_by(categoria = 'principal')
+    dadosSobremesa = bancoDados.session.query(Pratos).filter_by(categoria = 'sobremesa')
+    
+    return render_template('cardapio.html', dadosEntrada=dadosEntrada, dadosPrincipal=dadosPrincipal, dadosSobremesa=dadosSobremesa)
 
 if __name__ == '__main__':
     with app.app_context():
