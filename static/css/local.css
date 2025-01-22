@@ -1,9 +1,11 @@
 .principal{
     margin: 0 auto;
-    width: 80%;
-    height: 750px;
+    width: 60%;
+    height: 950px;
     background-color: #593325;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 h1{
     background-color:  #F2E6D8;
@@ -13,11 +15,22 @@ h1{
 p{
     color: #F2E6D8;
     height: 40px;
-    margin: 0 10% 12% 10%;
+    margin: 0 10% 3% 3%;
     font-size: 15px;
 }
 .local{
     height:70%;
     width: 90%;
 
+}
+@media(max-width:768px){
+    .principal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo , h1 , p , .principal, .local{
+        width: 95%;
+        margin-bottom: 3%;
+    }
+    
 }
