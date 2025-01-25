@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{ margin: 0;
     padding: 0;
 }
@@ -7,11 +8,8 @@ body{
 }
 
 header a{
-    color: #F2E6D8;
     text-decoration: none;
     transition: 0.3s;
-    
-    padding: 3%;
 }
 #menuPC a:hover {
     opacity: 0.7;
@@ -21,8 +19,9 @@ header a{
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    width: 120%;
-   
+    width: 50%;
+    color: #F2E6D8;
+    padding-left: 3%;
 }
 #menuPC{
     display: flex;
@@ -32,40 +31,32 @@ header a{
     background-color: #593325;
     height: 8vh;
     width: 100%;
-   
 }
 .nav-bar {
     list-style: none;
     display: flex;
-    width: 100%;
-  
-   
+    width: 50%;
+    justify-content: right;
 }
 .nav-bar li {
-    margin-left: 20%;
+    margin-right: 5%;
     letter-spacing: 3px;
     text-align: center;
+    align-items: center;
     width: 20%;
-    height: 30%;
-
+    height: 100%;
+}
+.nav-bar li a{
+    color: #ebd8f2;
 }
 #menuMobile{
     width: 100%;
-    height: 100%;
+    height: 8vh;
     display: none;
     justify-content: space-around;
     background-color: #593325;
     align-items: center;
     color: #fff2e2;
-}
-
-#logo{
-    width: 8%;
-   
-}
-a{
-    text-decoration: none;
-
 }
 .img_inicial{
     width: 100%;
@@ -89,7 +80,6 @@ menu{
 menu ul{
     list-style-type: none;
     margin-top: 10%;
-    
     background-color: #593325;
 }
 menu ul li{
@@ -110,7 +100,6 @@ menu ul li{
     width: 3%;
     height: 4%;
     font-size: 140%;
-    
 }
 .bt1{
     background-color: #4c3b34;
@@ -118,34 +107,45 @@ menu ul li{
     height: 50px;
     border: 2px solid #4c3b34;
 }
-.susp{
-    
+.divInicio{
+    background-image: url(/static/images/imgInicio.jpg);
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-size:     100%;             
+    background-repeat:   no-repeat;
+    background-position: center;              
     display: flex;
     align-items: center;
-    margin: -50% 0% 0% 3%;
+    width: 100%;
+    height: 28rem;
+    padding: 5% 0% 5% 5%;
 }
-.susp1{
+.divInicio1{
     background-color: #c57b262d;
-   display: inline;
-    width: 60%;
-}
-.susp2{
     display: inline;
     width: 50%;
-    height: 100%;
-    margin-right: 10%;
 }
-#ft_inicio{
+.divInicio2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fotoInicio{
     border: 4px solid #4c3b34;
     border-radius: 10%;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 60%;
+}
+.bt1 a{
+    color: white;
 }
 .sbrest{
     background-color: #f5a43d;
     width: 80%;
     height: 100%;
-    margin: 20% 3% 6% 10% ;
+    margin: 0% 3% 6% 10% ;
     padding-bottom: 10%;
     text-align: center;
     padding-top: 10%;
@@ -186,7 +186,7 @@ menu ul li{
     margin-top: 3%;
     margin-bottom: 3%;
 }
-@media (max-width: 999px) {
+@media (max-width: 1100px) {
     #menuMobile{
         display: flex;
         width: 100%;
@@ -197,8 +197,8 @@ menu ul li{
     }
     .susp,.susp1{
         width: 100%;
+        height: 14rem;
         font-size: 25px;
-    
        }
 }
 @media(max-width:500px){
@@ -210,7 +210,6 @@ menu ul li{
    .susp,.susp1{
     width: 100%;
     font-size: 10px;
-
    }
    
    .img_inicial{
@@ -236,10 +235,8 @@ menu ul li{
            .susp1{
             width: 100%;
             font-size: 35px;
-        
            }
            .susp{
-    
             display: flex;
             align-items: center;
             margin: -30% 0% 0% 3%;
