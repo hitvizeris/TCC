@@ -1,61 +1,64 @@
-body{
-    height: 100%;
-    width: 100%;
+*{
+    margin: 0;
+    top: 0;
 }
+
 .titulo{
     background-color: #f5a43d;
     font-size: 40px;
     margin: 0 auto;
     text-align: center;
+    padding: 1% 0;
 }
-.div_princ{
+
+.divPrincipal{
     background-color: #fff2e2;
-    height: 900px;
+    height: 100vh;
     width: 80%;
     margin: 0 auto;
 }
+
 .comidas{
     background-color: #fff2e2;
-    height: 100%;
     width: 100%;
     display: flex;
-}
-.div1{
-    height: 80%;
-    width: 30%;
-    background-color: #fff2e2;
-    display: inline;
-    margin: 0% 3% 0% 1%;
-    text-align: left;
-
-}
-.img1{
-    height: 200px;
-    width: 300px;
-}
-.div2{
-    height: 80%;
-    width: 30%;
-    background-color: #fff2e2;
-    display: inline;
-    margin: 0% 3% 0% 3%;
-    text-align: left;
+    justify-content: space-between;
 }
 
-.div3{
-    height: 80%;
+.divCategoria{
+    height: 100%;
     width: 30%;
     background-color: #fff2e2;
-    display: inline;
-    margin: 0% 3% 0% 3%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
 }
-#div1,#div2,#div3,#div4,#div5,#div6{
-    height: 25%;
+
+.divPrato{
     width: 80%;
     margin: 0 auto;
     background-color: #f5a43d;
-    
+    border: 10px solid #f5a43d;
+    border-radius:  10px;
+}
+.divPrato p{
+    font-size: 20px;
+}
 
-    
+.imgPrato{
+    width: 100%;
+    height:350px;
+}
+@media (max-width: 1500px) {
+    .divCategoria h1{
+        font-size: 25px;
+    }
+    .divPrato p{
+        font-size: 18px;
+    }
+    .imgPrato{
+        width: 100%;
+        height:250px;
+    }
 }
