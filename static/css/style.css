@@ -119,7 +119,6 @@ menu ul li{
     background-position: center;
     display: flex;
     align-items: center;
-    width: 100%;
     height: 28rem;
     padding: 5% 0% 5% 5%;
 }
@@ -146,16 +145,15 @@ menu ul li{
 }
 .sbrest{
     background-color: #f5a43d;
-    width: 80%;
+    width: 60%;
     height: 100%;
-    margin: 0% 3% 6% 10% ;
-    padding-bottom: 10%;
+    margin: 0% 3% 6% 5% ;
+    padding: 7% 15%;
     text-align: center;
-    padding-top: 10%;
 }
 .userinsta{
     font-family: "Playlist Script";
-    font-size: 24px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -166,16 +164,20 @@ menu ul li{
     text-align: center;
 }
 .p_sobre{
-    width: 70%;
-    margin: 0 auto;
-    margin: 10% 0% 10% 15%;
-    font-size: 120%;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
 }
 .bt_sobre{
-    font-size: 100%;
     background-color: #4c3b34;
-    padding: 3% 10% 3%;
+    width: 40%;
+    padding: 3%  0;
     border: 2px solid #4c3b34;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.bt_sobre a{
+    color: #f0f0f0;
 }
 .rodape{
     background-color: #f5a43d;
@@ -203,7 +205,7 @@ menu ul li{
         width: 100%;
     }
     .divInicio{
-        height: 14rem;
+        height: 13rem;
         font-size: 10px;
     }
     .divInicio h1{
@@ -219,37 +221,32 @@ menu ul li{
         height: 3rem;
         font-size: 10px;
     }
+    .userinsta{
+        font-size: 30px;
+    }
+    .p_sobre{
+        font-size: 30px;
+    }
 }
-@media(max-width:500px){
-    .inicial{
-    width: 100%;
-    text-align: center;
-   }
-   .divInicio, .divInicio1{
-    width: 100%;
-    font-size: 10px;
-   }
-   
-   .img_inicial{
-    height: 100%;
-   }
-   .sbrest{
-    margin: 0% 3% 6% 15% ;
-   }
-   
+@media(max-width:810px){
+    .userinsta{
+        font-size: 22px;
     }
-    @media (max-width: 1500px) {
-           .susp1{
-            width: 100%;
-            font-size: 35px;
-           }
-           .susp{
-            display: flex;
-            align-items: center;
-            margin: -30% 0% 0% 3%;
-        }
-       
-           .img_inicial{
-            height: 700px;
-           }
+    .p_sobre{
+        font-size: 22px;
     }
+    .bt_sobre{
+        font-size: 16px;
+    }
+}
+@media (max-width:625px) {
+    .userinsta{
+        font-size: 16px;
+    }
+    .p_sobre{
+        font-size: 16px;
+    }
+    .bt_sobre{
+        font-size: 10px;
+    }
+}
