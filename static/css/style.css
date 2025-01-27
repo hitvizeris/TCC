@@ -111,7 +111,7 @@ menu ul li{
     border-radius: 10px;
 }
 .divInicio{
-    background-image: url(/static/images/imgInicio.jpg);
+    background-image: url(./static/images/imgInicio.jpg);
     color: #000000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-size:     100%;             
