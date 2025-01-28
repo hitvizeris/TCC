@@ -179,6 +179,12 @@ menu ul li{
 .bt_sobre a{
     color: #f0f0f0;
 }
+#mapa{
+    width: 400px;
+    height: 300px;
+    border:0;
+    margin-top:24px
+}
 .rodape{
     background-color: #f5a43d;
     width: 100%;
@@ -248,5 +254,46 @@ menu ul li{
     }
     .bt_sobre{
         font-size: 10px;
+    }
+}
+@media (max-width:500px) {
+    .logoTitulo{
+        width: 70%;
+    }
+    .divInicio{
+        height: 9.5rem;
+        font-size: 7px;
+    }
+    .divInicio1{
+        width: 60%;
+    }
+    .divInicio2{
+        width: 40%;
+    }
+    #h1_inicial{
+        font-size: 12px;
+    }
+    .textoInicial{
+        font-size: 10px;
+    }
+    .bt1{
+        width: 60%;
+        height: 2.5rem;
+        font-size: 9px;
+    }
+    #fotoInicio{
+        height: 50%;
+        width: 85%;
+    }
+    .sbrest{
+        width: 72%;
+        height: 100%;
+        margin: 0% 3% 6% 5% ;
+        padding: 7% 9%;
+        text-align: center;
+    }
+    .userinsta{
+        font-size: 14px;
+        letter-spacing: 3px;
     }
 }
