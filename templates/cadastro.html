@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
+
 <body>
-    <form method="POST" >
+    <form method="POST" enctype="multipart/form-data">
         {{ form.csrf_token }}
         {{ form.nome.label }} {{ form.nome(size=20) }} <br>
 
         {{ form.preco.label }} {{ form.preco(size=20) }} <br>
 
+        {{ form.descricao.label }} {{ form.descricao(size=100) }} <br>
+
         {{ form.categoria.label }} {{ form.categoria(style='width: 100px') }} <br>
+
+        {{ form.imagem.label }}<br>
+        {% if prato.imagem %}
+        <img src="/{{ prato.imagem }}" alt="{{ prato.nome }}" width="100">
+        {{ form.imagem(class="form-control") }}
+        {% else %}
+        {{ form.imagem(class="form-control") }}
+        {% endif %} <br>
+
         <input type="submit" value="Confirmar">
     </form>
 </body>
+
 </html>

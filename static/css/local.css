@@ -1,19 +1,25 @@
+*{ margin: 0;
+    padding: 0;
+} 
+body{
+    background-color: #4c3b34;
+}
 .principal{
     margin: 0 auto;
     width: 60%;
     height: 950px;
-    background-color: #593325;
+    background-color: #fff2e2;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
 h1{
-    background-color:  #F2E6D8;
     text-align: center;
     font-size: 60px;
+    width: 100%;
+    background-color: #f5a43d;
 }
 p{
-    color: #F2E6D8;
     height: 40px;
     margin: 0 10% 3% 3%;
     font-size: 15px;
@@ -21,7 +27,8 @@ p{
 .local{
     height:70%;
     width: 90%;
-
+    border: 3px solid #4c3b34;
+    border-radius: 5px;
 }
 @media(max-width:768px){
     .principal{

@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
 *{ margin: 0;
     padding: 0;
-}
+} 
 body{
     background-color: #fff2e2;
     width: 100%;
@@ -60,6 +61,7 @@ header a{
 }
 #menuMobile a{
     color: #fff2e2;
+
 }
 .img_inicial{
     width: 100%;
@@ -87,7 +89,7 @@ menu ul{
     width: 100%;
 }
 menu ul li{
-    font-size: 120%;
+    font-size: 26px;
     letter-spacing: 0.2rem;
     width: 100%;
     height: 10%;
@@ -113,7 +115,8 @@ menu ul li{
 .divInicio{
     background-image: url(/static/images/imgInicio.jpg);
     color: #000000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Staatliches", serif;
+    letter-spacing: 3px;
     background-size:     100%;             
     background-repeat:   no-repeat;
     background-position: center;
@@ -137,18 +140,30 @@ menu ul li{
 #fotoInicio{
     border: 4px solid #4c3b34;
     border-radius: 10%;
-    height: 70%;
+    height: 60%;
     width: 60%;
 }
 .bt1 a{
-    color: white;
+    color: rgb(255, 255, 255);
+}
+#back_sbrest{
+    background-image: url(/static/images/back-site.jpg);
+    background-size:     100%;             
+    background-repeat:   no-repeat;
+    background-position: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
 }
 .sbrest{
     background-color: #f5a43d;
+    font-family: "Playwrite IN", serif;
     width: 60%;
     height: 100%;
-    margin: 0% 3% 6% 5% ;
-    padding: 7% 15%;
+    margin: 0% 3% 0% 5% ;
+    padding: 0% 15% 2% 15%;
     text-align: center;
 }
 .userinsta{
@@ -157,15 +172,9 @@ menu ul li{
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-.experiencias{
-    background-color: #4c3b34;
-    height: 500px;
-    width: 100%;
-    text-align: center;
-}
 .p_sobre{
     width: 100%;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
 }
 .bt_sobre{
@@ -188,8 +197,8 @@ menu ul li{
 .rodape{
     background-color: #f5a43d;
     width: 100%;
-    height: 60%;
-   text-align: center;
+    height: 100%;
+    text-align: center;
     padding-bottom: 3%;
 }
 .final{
@@ -255,6 +264,10 @@ menu ul li{
     .bt_sobre{
         font-size: 10px;
     }
+    menu ul li{
+        font-size: 20px;
+        padding: 5% 10%;
+    }
 }
 @media (max-width:500px) {
     .logoTitulo{
@@ -295,5 +308,8 @@ menu ul li{
     .userinsta{
         font-size: 14px;
         letter-spacing: 3px;
+    }
+    menu ul li{
+        font-size: 16px;
     }
 }

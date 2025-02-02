@@ -15,52 +15,40 @@
             <div class="divCategoria">
                 <h1>ENTRADAS</h1>
 
-                <div class="divPrato">
-                    <img src="/static/images/isca.jpg" class="imgPrato">
-                    <h2> Isca de peixa</h2><br>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Ducimus fugiat adipisci tempore voluptate possimus quod obcaecati excepturi. 
-                        Sit natus et dolor nemo.</p>
-                </div>
-
                 {% for prato in dadosEntrada %}
                 <div class="divPrato">
-                    <h1>{{prato.nome}}</h1>
+                <img src="{{ prato.imagem }}" class="imgPrato">
+                    <h2>{{prato.nome}}</h2><br>
+                    <p> {{prato.descricao}}</p><br>
+                    <h2>R$ {{prato.preco}}0</h2>
                 </div>
                 {% endfor %}
-                
             </div>
             
             <div  class="divCategoria">
                 <h1>PRATOS PRINCIPAIS</h1>
 
+                {% for prato in dadosPrincipal %}
                 <div class="divPrato">
-                    <img src="/static/images/isca.jpg" class="imgPrato">
-                    <p> camarão</p>
-                    <p> comida kskskskshdjks</p>
+                <img src="{{ prato.imagem }}" class="imgPrato">
+                    <h2>{{prato.nome}}</h2><br>
+                    <p> {{prato.descricao}}</p><br>
+                    <h2>R$ {{prato.preco}}0</h2>
                 </div>
-                
-                    {% for prato in dadosPrincipal %}
-                    <div class="divPrato">
-                        <h1>{{prato.nome}}</h1>
-                    </div>
-                    {% endfor %}
+                {% endfor %}
 
             </div>
         
             <div  class="divCategoria">
                 <h1>SOBREMESA</h1>
 
-                <div class="divPrato">
-                    <img src="/static/images/isca.jpg" class="imgPrato">
-                    <p> camarão</p>
-                    <p> comida kskskskshdjks</p>
-                </div>
-
                 {% for prato in dadosSobremesa %}
-                    <div class="divPrato">
-                        <h1>{{prato.nome}}</h1>
-                    </div>
+                <div class="divPrato">
+                <img src="{{ prato.imagem }}" class="imgPrato">
+                    <h2>{{prato.nome}}</h2><br>
+                    <p> {{prato.descricao}}</p><br>
+                    <h2>R$ {{prato.preco}}0</h2>
+                </div>
                 {% endfor %}
 
             </div>

@@ -12,14 +12,18 @@
         <tr>
             <th>Nome</th>
             <th>Preço</th>
+            <th>Descrição</th>
             <th>Categoria</th>
+            <th>Imagem</th>
             <th>Ações</th>
         </tr>
         {% for prato in dados %}
         <tr>
             <td>{{prato.nome}}</td>
             <td>{{prato.preco}}</td>
+            <td>{{prato.descricao}}</td>
             <td>{{prato.categoria}}</td>
+            <td><img src="{{ prato.imagem }}" alt="{{ prato.nome }}" width="100"></td>
             <td><a href="/editar/{{ prato.id }}">Editar</a> | <a href="/excluir/{{ prato.id }}" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a></td>
         </tr>
          {% endfor %}

@@ -1,0 +1,22 @@
+body{
+    padding: 0 10%;
+    background-color: #4c3b34;
+}
+form{
+    background-color: #eee8e0;
+    height: 100vh;
+}
+form button{
+    margin-left: 2%;
+}
+.input-group-text{
+    background-color: #f5a43d;
+}
+
+#titulo{
+    color: #eee8e0;
+    background-color: #f5a43d;
+    margin: 0;
+    text-align: center;
+    padding: 1% 0;
+}
