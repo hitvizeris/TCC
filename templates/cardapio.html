@@ -10,8 +10,25 @@
     <div class="divPrincipal">
     <h1 class="titulo">CARDÁPIO</h1><br>
 
-        <div class="comidas">
-            
+        <div class="comidas02">
+            <div id="cabecalho">
+                <a href="#">ENTRADAS</a>
+                <a href="#">PRINCIPAL</a>
+                <a href="#">SOBREMESA</a>
+            </div>
+            <div id="main">
+                {% for prato in dadosPrincipal %}
+                <div class="divPrato">
+                <img src="{{ prato.imagem }}" class="imgPrato">
+                    <h2 class="hNome">{{prato.nome}}</h2><div class="espaco"></div>
+                    <p> {{prato.descricao}}</p><div class="espaco"></div>
+                    <h2>R$ {{prato.preco}}0</h2>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="comidas01">
             <div class="divCategoria">
                 <h1>ENTRADAS</h1>
 

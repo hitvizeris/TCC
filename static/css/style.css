@@ -207,6 +207,12 @@ menu ul li{
     margin-top: 3%;
     margin-bottom: 3%;
 }
+@media (max-width: 1400px) {
+    #fotoInicio{
+        height: 60%;
+        width: 60%;
+    }
+}
 @media (max-width: 999px) {
     .logoTitulo{
         padding-left: 1%;

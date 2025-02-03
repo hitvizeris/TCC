@@ -3,6 +3,7 @@
     top: 0;
 }
 body{
+    height: 100%;
     background-color: #4c3b34;
 }
 
@@ -16,16 +17,19 @@ body{
 
 .divPrincipal{
     background-color: #fff2e2;
-    height: 100vh;
+    height: 100%;
     width: 80%;
     margin: 0 auto;
 }
 
-.comidas{
+.comidas01{
     background-color: #fff2e2;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.comidas02{
+    display: none;
 }
 
 .divCategoria{
@@ -58,6 +62,7 @@ body{
 .espaco{
     height: 16px;       
 }
+
 @media (max-width: 1500px) {
     .divCategoria h1{
         font-size: 25px;
@@ -70,7 +75,7 @@ body{
         height:250px;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 750px) {
     .divCategoria{
         gap: 20px;
     }
@@ -103,5 +108,42 @@ body{
     }
     .espaco{
         height: 10px;
+    }
+}
+@media (max-width: 500px){
+    .comidas01{
+        display: none;
+    }
+    .comidas02{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #cabecalho{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 4%;
+    }
+    #cabecalho a{
+        text-decoration: none;
+        color: black;
+    }
+    #main{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 275px;
+        margin: 0 4%;
+    }
+    .divPrato{
+        margin-bottom: 15%;
+        width: 85%;
+    }
+    .hNome{
+        height: 16px;
+    }
+    .divPrato p{
+        font-size: 11px;
     }
 }
