@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 :root{
     --cor1: #ffffff;
     --cor2: #fadfb4;
     --cor3: #4c3b34;
+    --fonte1: "Staatliches", serif;
 }
 *{
     margin: 0;
@@ -10,6 +12,8 @@
 body{
     height: 100%;
     background-color: var(--cor3);
+    font-family: var(--fonte1);
+    letter-spacing: 2px;
 }
 
 .titulo{
@@ -57,6 +61,8 @@ body{
 }
 .divPrato p{
     font-size: 20px;
+    font-family: none;
+    letter-spacing: 0px;
 }
 
 .imgPrato{
@@ -115,7 +121,10 @@ body{
         height: 10px;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 500px){ 
+    body{
+        letter-spacing: 1px;
+    }
     .comidas01{
         display: none;
     }
@@ -156,6 +165,8 @@ body{
     .divPrato p{
         font-size: 10px;
         text-align: center;
+        font-family: none;
+        letter-spacing: 0px;
     }
     .divPrato h2{
         text-align: center;

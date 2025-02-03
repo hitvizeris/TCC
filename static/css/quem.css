@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 :root{
     --cor1: #ffffff;
     --cor2: #fadfb4;
     --cor3: #4c3b34;
+    --fonte1: "Staatliches", serif;
 }
 body{
     margin: 0;
@@ -14,6 +16,8 @@ body{
     width: 80%;
     height: 100vh;
     background-color: var(--cor1);
+    font-family: var(--fonte1);
+    letter-spacing: 2px;
     text-align: center;
 }
 .texto{
@@ -23,7 +27,7 @@ h1{
     background-color: var(--cor2);
     text-align: center;
     font-size: 60px;
-    color: var(--cor1);
+    color: var(--cor3);
     margin: 0;
     padding: 2% 0;
 }
@@ -48,7 +52,7 @@ h2{
     background-color: var(--cor2);
     text-align: left;
     padding-left: 3%;
-    color: var(--cor1);
+    color: var(--cor3);
 }
 #p{
     width: 80%;
@@ -63,6 +67,7 @@ h2{
     }
     .principal{
         width: 90%;
+        letter-spacing: 1px;
     }
     .principal p{
         font-size: 12px;

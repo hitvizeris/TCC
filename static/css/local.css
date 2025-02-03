@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 :root{
     --cor1: #ffffff;
     --cor2: #fadfb4;
     --cor3: #4c3b34;
+    --fonte1: "Staatliches", serif;
 }
 *{ margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@ body{
     background-color: var(--cor3);
     display: flex;
     justify-content: center;
+    font-family: var(--fonte1);
+    letter-spacing: 3px;
 }
 .principal{
     margin: 0;
@@ -41,6 +45,9 @@ p{
     border-radius: 5px;
 }
 @media (max-width:500px) {
+    body{
+        letter-spacing: 1px;
+    }
     p{
         font-size: 12px;
         margin: 3% 10% 12% 3%;
