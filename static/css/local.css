@@ -1,8 +1,13 @@
+:root{
+    --cor1: #ffffff;
+    --cor2: #fadfb4;
+    --cor3: #4c3b34;
+}
 *{ margin: 0;
     padding: 0;
 } 
 body{
-    background-color: #4c3b34;
+    background-color: var(--cor3);
     display: flex;
     justify-content: center;
 }
@@ -10,7 +15,7 @@ body{
     margin: 0;
     width: 60%;
     height: 100vh;
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -22,7 +27,7 @@ h1{
     text-align: center;
     font-size: 60px;
     width: 100%;
-    background-color: #f5a43d;
+    background-color: var(--cor2);
 }
 p{
     height: 40px;
@@ -32,7 +37,7 @@ p{
 .local{
     height:60%;
     width: 80%;
-    border: 3px solid #4c3b34;
+    border: 3px solid var(--cor3);
     border-radius: 5px;
 }
 @media (max-width:500px) {

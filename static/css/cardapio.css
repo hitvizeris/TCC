@@ -1,14 +1,19 @@
+:root{
+    --cor1: #ffffff;
+    --cor2: #fadfb4;
+    --cor3: #4c3b34;
+}
 *{
     margin: 0;
     top: 0;
 }
 body{
     height: 100%;
-    background-color: #4c3b34;
+    background-color: var(--cor3);
 }
 
 .titulo{
-    background-color: #f5a43d;
+    background-color: var(--cor2);
     font-size: 40px;
     margin: 0 auto;
     text-align: center;
@@ -16,14 +21,14 @@ body{
 }
 
 .divPrincipal{
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     height: 100%;
     width: 80%;
     margin: 0 auto;
 }
 
 .comidas01{
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -35,7 +40,7 @@ body{
 .divCategoria{
     height: 100%;
     width: 30%;
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -46,8 +51,8 @@ body{
 .divPrato{
     width: 80%;
     margin: 0;
-    background-color: #f5a43d;
-    border: 10px solid #f5a43d;
+    background-color: var(--cor2);
+    border: 10px solid var(--cor2);
     border-radius:  10px;
 }
 .divPrato p{
@@ -90,7 +95,7 @@ body{
     }
     .divPrato{
         width: 88%;
-        border: 5px solid #f5a43d;
+        border: 5px solid var(--cor2);
     }
     .divPrato h2{
         font-size: 14px;

@@ -1,29 +1,34 @@
+:root{
+    --cor1: #ffffff;
+    --cor2: #fadfb4;
+    --cor3: #4c3b34;
+}
 body{
     margin: 0;
     padding: 0;
-    background-color: #4c3b34;
+    background-color: var(--cor3);
 }
 .principal{
     margin: 0 auto;
     padding: 0;
     width: 80%;
     height: 100vh;
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     text-align: center;
 }
 .texto{
     display: flex;
 }
 h1{
-    background-color: #f5a43d;
+    background-color: var(--cor2);
     text-align: center;
     font-size: 60px;
-    color: #fff2e2;
+    color: var(--cor1);
     margin: 0;
     padding: 2% 0;
 }
 .div_prin{
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     width: 50%;
 }
 .div{
@@ -40,10 +45,10 @@ h1{
 h2{
     text-align: center;
     font-size: 4dvh;
-    background-color: #f5a43d;
+    background-color: var(--cor2);
     text-align: left;
     padding-left: 3%;
-    color: #F2E6D8;
+    color: var(--cor1);
 }
 #p{
     width: 80%;
