@@ -129,12 +129,15 @@ body{
         text-decoration: none;
         color: black;
     }
-    #main{
+    #mainEntrada, #mainPrincipal, #mainSobremesa{
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 275px;
         margin: 0 4%;
+    }
+    #mainPrincipal, #mainSobremesa{
+        display: none;
     }
     .divPrato{
         margin-bottom: 15%;

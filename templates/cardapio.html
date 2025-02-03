@@ -12,12 +12,32 @@
 
         <div class="comidas02">
             <div id="cabecalho">
-                <a href="#">ENTRADAS</a>
-                <a href="#">PRINCIPAL</a>
-                <a href="#">SOBREMESA</a>
+                <a onclick="ativaCategoria('mainEntrada')">ENTRADAS</a>
+                <a onclick="ativaCategoria('mainPrincipal')">PRINCIPAL</a>
+                <a onclick="ativaCategoria('mainSobremesa')">SOBREMESA</a>
             </div>
-            <div id="main">
+            <div id="mainEntrada">
+                {% for prato in dadosEntrada %}
+                <div class="divPrato">
+                <img src="{{ prato.imagem }}" class="imgPrato">
+                    <h2 class="hNome">{{prato.nome}}</h2><div class="espaco"></div>
+                    <p> {{prato.descricao}}</p><div class="espaco"></div>
+                    <h2>R$ {{prato.preco}}0</h2>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="mainPrincipal">
                 {% for prato in dadosPrincipal %}
+                <div class="divPrato">
+                <img src="{{ prato.imagem }}" class="imgPrato">
+                    <h2 class="hNome">{{prato.nome}}</h2><div class="espaco"></div>
+                    <p> {{prato.descricao}}</p><div class="espaco"></div>
+                    <h2>R$ {{prato.preco}}0</h2>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="mainSobremesa">
+                {% for prato in dadosSobremesa %}
                 <div class="divPrato">
                 <img src="{{ prato.imagem }}" class="imgPrato">
                     <h2 class="hNome">{{prato.nome}}</h2><div class="espaco"></div>
@@ -71,5 +91,6 @@
             </div>
         </div>
     </div>
+    <script src="/static/js/comand.js"></script>
 </body>
 </html>
