@@ -3,9 +3,11 @@
 } 
 body{
     background-color: #4c3b34;
+    display: flex;
+    justify-content: center;
 }
 .principal{
-    margin: 0 auto;
+    margin: 0;
     width: 60%;
     height: 100vh;
     background-color: #fff2e2;
@@ -24,15 +26,28 @@ h1{
 }
 p{
     height: 40px;
-    margin: 0 10% 3% 3%;
-    font-size: 15px;
+    margin: 3% 10% 5% 3%;
+    font-size: 20px;
 }
 .local{
-    height:70%;
-    width: 90%;
+    height:60%;
+    width: 80%;
     border: 3px solid #4c3b34;
     border-radius: 5px;
 }
 @media (max-width:500px) {
-
+    p{
+        font-size: 12px;
+        margin: 3% 10% 12% 3%;
+    }
+    .principal{
+        width: 90%;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .local{
+        height:40%;
+        width: 90%;
+    }
 }
