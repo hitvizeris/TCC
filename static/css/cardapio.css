@@ -142,8 +142,13 @@ body{
     }
     .hNome{
         height: 16px;
+        text-align: center;
     }
     .divPrato p{
-        font-size: 11px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .divPrato h2{
+        text-align: center;
     }
 }
