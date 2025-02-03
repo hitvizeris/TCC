@@ -20,6 +20,7 @@ h1{
     font-size: 60px;
     color: #fff2e2;
     margin: 0;
+    padding: 2% 0;
 }
 .div_prin{
     background-color: #fff2e2;
@@ -43,4 +44,18 @@ h2{
     text-align: left;
     padding-left: 3%;
     color: #F2E6D8;
+}
+@media (max-width: 500px) {
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 2dvh;
+    }
+    .principal{
+        width: 90%;
+    }
+    .principal p{
+        font-size: 12px;
+    }
 }
