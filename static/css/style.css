@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+:root{
+    --cor1: #ffffff;
+    --cor2: #fadfb4;
+    --cor3: #593325;
+}
 *{ margin: 0;
     padding: 0;
 } 
 body{
-    background-color: #fff2e2;
+    background-color: var(--cor1);
     width: 100%;
 }
 
@@ -21,7 +26,7 @@ header a{
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 50%;
-    color: #F2E6D8;
+    color: var(--cor1);
     padding-left: 3%;
 }
 #menuPC{
@@ -29,7 +34,7 @@ header a{
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #593325;
+    background-color: var(--cor3);
     height: 8vh;
     width: 100%;
 }
@@ -48,19 +53,19 @@ header a{
     height: 100%;
 }
 .nav-bar li a{
-    color: #ebd8f2;
+    color: var(--cor1);
 }
 #menuMobile{
     width: 100%;
     height: 8vh;
     display: none;
     justify-content: space-around;
-    background-color: #593325;
+    background-color: var(--cor3);
     align-items: center;
-    color: #fff2e2;
+    color: var(--cor1);
 }
 #menuMobile a{
-    color: #fff2e2;
+    color: var(--cor1);
 
 }
 .img_inicial{
@@ -70,7 +75,7 @@ header a{
 #icone{
     font-size: 200%;
     cursor: pointer;
-    color: #593325;
+    color: var(--cor3);
 }
 menu{
     display: none;
@@ -80,12 +85,12 @@ menu{
     width: 40%;
     height: 100%;
     cursor: pointer;
-    background-color: #f0f0f0;
+    background-color: var(--cor1);
 }
 menu ul{
     list-style-type: none;
     padding-top: 10% 0 10% 10%;
-    background-color: #593325;
+    background-color: var(--cor3);
     width: 100%;
 }
 menu ul li{
@@ -96,7 +101,7 @@ menu ul li{
     padding: 10% 0 10% 10%;
 }
 .flut{
-    background-color: #593325;
+    background-color: var(--cor3);
     position: sticky;
     top: 90%;
     left: 95%;
@@ -106,10 +111,10 @@ menu ul li{
     font-size: 140%;
 }
 .bt1{
-    background-color: #4c3b34;
+    background-color: var(--cor3);
     width: 50%;
     height: 5rem;
-    border: 2px solid #4c3b34;
+    border: 2px solid var(--cor3);
     border-radius: 10px;
 }
 .divInicio{
@@ -138,13 +143,13 @@ menu ul li{
     justify-content: center;
 }
 #fotoInicio{
-    border: 4px solid #4c3b34;
+    border: 4px solid var(--cor3);
     border-radius: 10%;
     height: 70%;
     width: 60%;
 }
 .bt1 a{
-    color: rgb(255, 255, 255);
+    color: var(--cor1);
 }
 #back_sbrest{
     background-image: url(/static/images/back-site.jpg);
@@ -158,7 +163,7 @@ menu ul li{
     margin-bottom: 5%;
 }
 .sbrest{
-    background-color: #f5a43d;
+    background-color: var(--cor2);
     font-family: "Playwrite IN", serif;
     width: 60%;
     height: 100%;
@@ -179,15 +184,15 @@ menu ul li{
     margin: 5% 0;
 }
 .bt_sobre{
-    background-color: #4c3b34;
+    background-color: var(--cor3);
     width: 40%;
     padding: 3%  0;
-    border: 2px solid #4c3b34;
+    border: 2px solid var(--cor3);
     border-radius: 10px;
     font-size: 22px;
 }
 .bt_sobre a{
-    color: #f0f0f0;
+    color: var(--cor1);
 }
 #mapa{
     width: 500px;
@@ -196,7 +201,7 @@ menu ul li{
     margin-top:24px
 }
 .rodape{
-    background-color: #f5a43d;
+    background-color: var(--cor2);
     width: 100%;
     height: 100%;
     text-align: center;
