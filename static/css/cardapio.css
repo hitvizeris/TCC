@@ -36,11 +36,12 @@ body{
     flex-direction: column;
     gap: 30px;
     text-align: center;
+    align-items: center;
 }
 
 .divPrato{
     width: 80%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #f5a43d;
     border: 10px solid #f5a43d;
     border-radius:  10px;
@@ -52,6 +53,10 @@ body{
 .imgPrato{
     width: 100%;
     height:350px;
+    border-radius: 2px;
+}
+.espaco{
+    height: 16px;       
 }
 @media (max-width: 1500px) {
     .divCategoria h1{
@@ -63,5 +68,40 @@ body{
     .imgPrato{
         width: 100%;
         height:250px;
+    }
+}
+@media (max-width: 500px){
+    .divCategoria{
+        gap: 20px;
+    }
+    .divPrincipal{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 26px;
+    }
+    .divCategoria h1{
+        font-size: 16px;
+    }
+    .divPrato{
+        width: 88%;
+        border: 5px solid #f5a43d;
+    }
+    .divPrato h2{
+        font-size: 14px;
+    }
+    .divPrato p{
+        font-size: 12px;
+    }
+    .hNome{
+        margin-top: 1%;
+        height: 32px;
+    }
+    .imgPrato{
+        width: 100%;
+        height: 120px;
+    }
+    .espaco{
+        height: 10px;
     }
 }
