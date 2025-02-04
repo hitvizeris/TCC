@@ -1,21 +1,26 @@
-body{
+:root{
+    --cor1: #ffffff;
+    --cor2: #fadfb4;
+    --cor3: #4c3b34;
+}
+#divGeral{
+    background-color: var(--cor3);
     padding: 0 10%;
-    background-color: #4c3b34;
 }
 form{
-    background-color: #eee8e0;
+    background-color: var(--cor2);
     height: 100vh;
 }
 form button{
     margin-left: 2%;
 }
 .input-group-text{
-    background-color: #f5a43d;
+    background-color: var(--cor2);
 }
 
 #titulo{
-    color: #eee8e0;
-    background-color: #f5a43d;
+    color: var(--cor1);
+    background-color: var(--cor2);
     margin: 0;
     text-align: center;
     padding: 1% 0;

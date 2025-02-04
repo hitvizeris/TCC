@@ -4,19 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Cadastro</title>
 </head>
 
 <body>
+    <div id="divGeral">
     <form method="POST" enctype="multipart/form-data">
         {{ form.csrf_token }}
-        {{ form.nome.label }} {{ form.nome(size=20) }} <br>
+        <div class="input-group mb-3">
+            
+            <span class="input-group-text" id="basic-addon1">{{ form.nome.label }}</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="nome" name="nome">
+        </div>
 
-        {{ form.preco.label }} {{ form.preco(size=20) }} <br>
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="preco" name="preco">
+            <span class="input-group-text">.00</span>
+        </div>
 
-        {{ form.descricao.label }} {{ form.descricao(size=100) }} <br>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">{{ form.descricao.label }}</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="descricao" name="descricao">
+        </div>
 
-        {{ form.categoria.label }} {{ form.categoria(style='width: 100px') }} <br>
+        <select class="form-select" aria-label="Default select example" id="categoria" name="categoria">
+            <option selected>Categoria</option>
+            <option value="entrada">Entrada</option>
+            <option value="principal">Principal</option>
+            <option value="sobremesa">Sobremesa</option>
+          </select>
 
         {{ form.imagem.label }}<br>
         {% if prato.imagem %}
@@ -26,8 +45,10 @@
         {{ form.imagem(class="form-control") }}
         {% endif %} <br>
 
-        <input type="submit" value="Confirmar">
+        <input type="submit" value="Confirmar" class="btn btn-success">
+
     </form>
+    </div>
 </body>
 
 </html>
