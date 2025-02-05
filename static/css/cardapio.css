@@ -172,4 +172,11 @@ body{
         text-align: center;
         font-size: 12px;
     }
+    #e{
+        background-color : #fadfb4;
+    }
+    #e, #p, #s{
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
 }
